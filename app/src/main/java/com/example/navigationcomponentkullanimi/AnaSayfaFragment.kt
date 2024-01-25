@@ -32,6 +32,12 @@ class AnaSayfaFragment : Fragment() {
          //   Navigation.findNavController(it).navigate(R.id.detayGecis)
         }
 
+        binding.Goster.setOnClickListener {// goster butonuna tıklandıgında bottom sheet gosterilcek
+            Navigation.findNavController(it).navigate(R.id.bottomSheetGecis)
+        }
+
+
+
 
         return binding.root
     }
